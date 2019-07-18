@@ -31,9 +31,8 @@ printed by `python3 ./stress_test.py --help`
 
 ```
 usage: stress_test.py [-h] [--connection CONNECTION_URL] [--workload_1] [--workload_2]
-                      [--workload_3] [--number_of_threads NUMBER_OF_THREADS]
-                      [--number_of_tables NUMBER_OF_TABLES] [--delay_sec DELAY_SEC]
-                      [--cleanup_and_exit] [--cdh6] [--cluster_ssh_password CLUSTER_SSH_PASSWORD]
+                      [--number_of_threads NUMBER_OF_THREADS] [--number_of_tables NUMBER_OF_TABLES]
+                      [--delay_sec DELAY_SEC] [--cleanup_and_exit] [--cdh6]
 
 HBase Meta Table stress tester tool. You can specify different workloads. If you don't specify any,
 then 'workload_1' will be used. If you specify multiple, then all of them will run parallel.
@@ -56,5 +55,6 @@ optional arguments:
   --cdh6                use thrift connection settings compatible with the default CDH6 Hbase Thrift
                         server: 'compact' protocol and 'framed' transport. (default: CDH5 compatible
                         'binary' protocol and 'buffered' transport)
+
 
 ```
